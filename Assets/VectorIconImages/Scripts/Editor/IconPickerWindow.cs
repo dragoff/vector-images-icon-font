@@ -63,6 +63,11 @@ namespace VectorIconImages
 
         private void OnGUI()
         {
+            if (selfW == null)
+            {
+                Close();
+                return;
+            }
             Rect windowRect = selfW.position;
             elementsInLine =(int) windowRect.size.x / 100;
             GUILayout.Space(10);
@@ -75,7 +80,7 @@ namespace VectorIconImages
 
         }
 
-        #region Private Methods
+        #region PRIVATE METHODS
         
         private string DecodeUnicodeString(string s) => System.Text.RegularExpressions.Regex.Unescape(@"\u" + s);
 
