@@ -1,7 +1,9 @@
-﻿﻿using System.Collections.Generic;
-using System.Linq;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_EDITOR
+using System.Linq;
+#endif
 
 namespace VectorIconImages
 {
@@ -39,6 +41,12 @@ namespace VectorIconImages
             base.Start();
 #if UNITY_EDITOR
             font = Definitions.Font;
+            if (string.IsNullOrEmpty(iconName))
+            {
+                iconName = Data.IconData.ElementAt(0).Key;
+                text = CreateUnicode(Data.IconData[iconName]);
+                color = Color.gray;
+            }
 #endif
         }
 
