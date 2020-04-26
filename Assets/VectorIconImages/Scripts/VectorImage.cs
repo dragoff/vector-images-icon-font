@@ -17,7 +17,7 @@ namespace VectorIconImages
             set => m_iconName = value;
         }
 
-        [SerializeField] private float m_Size = 10;
+        [SerializeField] private float m_Size = 40;
 
         public float size
         {
@@ -46,6 +46,7 @@ namespace VectorIconImages
                 iconName = Data.IconData.ElementAt(0).Key;
                 text = CreateUnicode(Data.IconData[iconName]);
                 color = Color.gray;
+                size = 40;
             }
 #endif
         }
