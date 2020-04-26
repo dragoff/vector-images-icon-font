@@ -1733,8 +1733,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uECA4"
-  m_iconName: square-full
+  m_Text: "\uEAB5"
+  m_iconName: unity
   m_Size: 100
   m_ExtraName: 
   m_ExtraText: 

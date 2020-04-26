@@ -9,10 +9,7 @@ namespace VectorIconImages
 		[MenuItem("Tools/Vector Icons/Open icomoon.io",false,0)]
 		public static void Link1() => Application.OpenURL("https://icomoon.io/app/#/select");
 
-		[MenuItem("Tools/Vector Icons/Open fontello.com",false,1)]
-		public static void Link2() => Application.OpenURL("http://fontello.com");
-
-		[MenuItem("Tools/Vector Icons/Load font and codepoints",false,16)]
+		[MenuItem("Tools/Vector Icons/Load font with codepoints",false,16)]
 		public static void OpenCodepointsFile()
 		{
 			string file = EditorUtility.OpenFilePanel("Select codepoint File", Application.dataPath, "");

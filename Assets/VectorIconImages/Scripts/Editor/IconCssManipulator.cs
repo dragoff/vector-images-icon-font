@@ -13,7 +13,7 @@ namespace VectorIconImages
         private static string[] cssStrings;
         private static string prefix;
 
-        [MenuItem("Tools/Vector Icons/Load font and .css(style) file", false, 15)]
+        [MenuItem("Tools/Vector Icons/Load font with style.css file", false, 15)]
         public static void OpenCssFile()
         {
             string cssFile = EditorUtility.OpenFilePanel("Select .css file", Application.dataPath, "css");
